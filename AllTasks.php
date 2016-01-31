@@ -1,0 +1,82 @@
+<?php
+header('Content-type:text/html;charset=utf-8');
+
+//Task 1
+
+echo "<h2>1 задача</h2>";
+$a = 5 ;
+$b = 10;
+echo "<p>".$a."</p><p>".$b."</p>";
+
+/*Task 2 
+circle*/
+
+echo "<h2>2 задача</h2>";
+$r = 3;
+$PI = 3.14;
+$C =2*$PI*$r;
+$S =$PI*$r*$r;
+
+
+echo '<p> Perimeter of a trapezoid is ' . $C . '  cm </p>';
+echo " Area of a circle is " . $S . " cm2";
+
+/*Task 3 
+trapezoid*/
+
+echo "<h2>3 задача</h2>";
+$a = 5 ;
+$b = 10;
+$c = 6 ;
+$h = 3 ;
+$P = $a+$b+$c+$c;
+$S = ($a + $b)*($h/2);
+
+
+echo '<p> Perimeter of a trapezoid is ' . $P . '  cm </p>';
+echo " Area of a trapezoid is " . $S . " cm2" ;
+
+/*Task 4 
+Table */
+
+echo "<h2>4 задача</h2>";
+echo "<table width='400' height='100' border='1'>";
+echo "<tr><td>P(rectangle) = 2*a + 2*b </td><td>S(rectangle)=a*b</td></tr>";
+echo "<tr><td>P(square)=4*a</td><td>S(square) = a*a</td></tr>";
+echo "<tr><td>P(triangle=a+b+c</td><td>S(triangle) = 1/2*(b*h)</td></tr>";
+echo "</table>";
+
+/*Task 5 
+Date */
+
+echo "<h2>5 задача</h2>";
+echo "<h2>Дата и час в България</h2>";
+echo "днес е ".date("d.m.Y")."<br>";
+date_default_timezone_set("Europe/Sofia");
+echo "часът е ".date("h:i:s");
+
+//Task 6
+
+echo "<h2>6 задача</h2>";
+echo "<h2>Дата и час в Бразилия</h2>";
+date_default_timezone_set("America/Buenos_Aires");
+echo "днес е ".date("d.m.Y")."<br>";
+echo "часът е ".date("h:i:s")."<br>";
+
+//Task 7
+
+echo "<h2>7 задача</h2>";
+echo "днес е ".date("d/m/Y")."<br>";
+echo "днес е ".date("Y-m-d")."<br>";
+echo "днес е ".date("d/M/Y")."<br>";
+
+//Task 8
+
+echo "<h2>8 задача</h2>";
+date_default_timezone_set("Europe/Sofia");
+echo "часът е ".date("H:i")."<br>";
+echo "часът е ".date("h:ia")."<br>";
+echo "часът е ".date("H:i:s")."<br>";
+
+
+?>
